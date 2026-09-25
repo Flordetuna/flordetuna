@@ -51,7 +51,7 @@ export default function Footer() {
             </p>
 
             <a
-              href="https://wa.me/5554999304474"
+              href="https://wa.me/5554996223146"
               target="_blank"
               rel="noreferrer"
               className="group mt-8 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.16em]"
@@ -98,7 +98,7 @@ export default function Footer() {
 
             <div className="mt-7 space-y-5">
               <a
-                href="https://wa.me/5554999304474"
+                href="https://wa.me/5554996223146"
                 target="_blank"
                 rel="noreferrer"
                 className="group flex items-start gap-4"
