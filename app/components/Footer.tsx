@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import {
   ArrowUpRight,
   Camera,
@@ -180,17 +181,11 @@ export default function Footer() {
             © {currentYear} Flor de Tuna. Todos os direitos reservados.
           </p>
 
-          <a
-            href="https://wa.me/5554999304474"
-            target="_blank"
-            rel="noreferrer"
-            className="transition-opacity duration-300 hover:opacity-70"
-            style={{ color: "rgba(246, 242, 235, 0.5)" }}
-          >
-            Desenvolvido por BP Resultados
-          </a>
+          <kyvo-selo data-alinhar="direita" className="self-start md:self-auto" />
         </div>
       </Container>
+
+      <Script src="https://kyvo.dev.br/selo.js" strategy="afterInteractive" />
     </footer>
   );
 }
