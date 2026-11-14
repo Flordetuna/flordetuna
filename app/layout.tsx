@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://flordetuna.com.br"),
+  metadataBase: new URL("https://www.flordetunars.com.br"),
 
   title: {
     default: "Flor de Tuna | Arte em Madeira",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://flordetuna.com.br",
+    url: "/",
     title: "Flor de Tuna",
     description:
       "Peças artesanais exclusivas em madeira maciça e resina.",
@@ -76,6 +76,10 @@ export const metadata: Metadata = {
     images: ["/og.jpg"],
   },
 
+  alternates: {
+    canonical: "/",
+  },
+
   robots: {
     index: true,
     follow: true,
@@ -85,6 +89,10 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#09260e",
 };
 
 export default function RootLayout({

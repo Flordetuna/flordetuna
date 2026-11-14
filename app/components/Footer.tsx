@@ -6,6 +6,7 @@ import {
   Camera,
   MapPin,
   MessageCircle,
+  Phone,
 } from "lucide-react";
 
 import Container from "./Container";
@@ -120,6 +121,28 @@ export default function Footer() {
                     style={{ color: "#F6F2EB" }}
                   >
                     Solicite seu orçamento
+                  </span>
+                </span>
+              </a>
+
+              <a href="tel:+5554996223146" className="group flex items-start gap-4">
+                <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#F6F2EB]/20 transition-colors duration-300 group-hover:border-[#C9A56A]">
+                  <Phone size={17} />
+                </span>
+
+                <span>
+                  <span
+                    className="block text-xs uppercase tracking-[0.14em]"
+                    style={{ color: "rgba(246, 242, 235, 0.55)" }}
+                  >
+                    Telefone
+                  </span>
+
+                  <span
+                    className="mt-1 block text-sm"
+                    style={{ color: "#F6F2EB" }}
+                  >
+                    (54) 99622-3146
                   </span>
                 </span>
               </a>
