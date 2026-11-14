@@ -106,7 +106,11 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} ${playfair.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Cloudflare Web Analytics: medição de visitas sem cookies */}
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1e9cbd3c824d449ca50fd8c4259e0a16"}'></script>
+      </body>
     </html>
   );
 }
